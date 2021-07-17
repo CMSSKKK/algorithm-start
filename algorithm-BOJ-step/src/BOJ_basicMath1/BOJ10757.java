@@ -15,7 +15,7 @@ public class BOJ10757 { // 출제자의 의도는 직접 덧셈을 구현하라는 의도가 아니였�
 		BigInteger A = new BigInteger(st.nextToken());
 		BigInteger B = new BigInteger(st.nextToken());
 		A =A.add(B);
-		System.out.println(A);
+		System.out.println(A.toString());
 	}
 
 } 
