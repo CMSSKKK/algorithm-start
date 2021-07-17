@@ -1,4 +1,4 @@
-package baek_basicMath1;
+package BOJ_basicMath1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
