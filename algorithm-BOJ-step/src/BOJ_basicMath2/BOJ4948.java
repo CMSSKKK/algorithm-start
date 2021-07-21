@@ -34,7 +34,7 @@ public class BOJ4948 {
 		
 		for (int i = 2; i < Math.sqrt(prime.length); i++) {
 			if(prime[i]) continue;
-			for (int j = i*i; j < prime.length; j=j+i) { // i를 제외한 i의 배수들을 제외시킨다
+			for (int j = i*i; j < prime.length; j=j+i) { 
 				prime[j]= true;
 			}
 		}
