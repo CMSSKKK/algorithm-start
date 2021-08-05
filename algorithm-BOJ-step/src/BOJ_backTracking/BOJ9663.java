@@ -17,7 +17,7 @@ public class BOJ9663 {
 		
 		N = Integer.parseInt(br.readLine());
 		board = new int[N];
-		
+		System.out.println(board[3]);
 		nQueen(0);
 		System.out.println(count);
 	}
