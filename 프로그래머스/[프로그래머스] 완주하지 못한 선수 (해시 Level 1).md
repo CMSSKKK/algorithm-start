@@ -10,7 +10,8 @@ class Solution {
         HashMap<String, Integer> map = new HashMap<>();
         
         for(String runner : participant) {
-            map.put(runner, map.getOrDefault(runner, 0) + 1);
+            map.put(runner, map.getOrDefault(runner, 0) + 1); 
+     // map.getOrDefault(key, defaultValue) map안에 일치하는 key가 있으면 그 값을 가져오고 없으면 지정한 default값을 넣는다. 
         }
         
         for(String runner : completion) {
