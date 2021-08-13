@@ -16,6 +16,7 @@ import java.util.StringTokenizer;
 //
 //otherwise it returns:
 //    w(a-1, b, c) + w(a-1, b-1, c) + w(a-1, b, c-1) - w(a-1, b-1, c-1)
+
 public class BOJ9184 {
 	
 	static int[][][] dp = new int[21][21][21];
@@ -34,6 +35,7 @@ public class BOJ9184 {
 			if(a==-1 && b==-1 && c==-1) {
 				break;
 			}
+			
 			sb.append("w(" + a + ", " + b + ", " + c + ") = ").append(w(a ,b ,c)).append('\n');
 			
 			
