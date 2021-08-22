@@ -23,16 +23,16 @@ public class BOJ1463 {
 	
 	public static int minOper(int N) {
 		
-		if(dp[N]== null) {
+		if(dp[N] == null) {
 			
 			if(N%6 == 0) {
 				dp[N] = Math.min(minOper(N-1),Math.min(minOper(N/3), minOper(N/2))) +1;
 			}
 			else if(N%3 == 0) {
-				dp[N] = Math.min(minOper(N-1), minOper(N/3))+1;
+				dp[N] = Math.min(minOper(N/3), minOper(N-1))+1;
 			} 
 			else if(N%2 == 0) {
-				dp[N] = Math.min(minOper(N-1), minOper(N/2))+1;
+				dp[N] = Math.min(minOper(N/2), minOper(N-1))+1;
 			}
 			else {
 				dp[N] = minOper(N-1)+1;
