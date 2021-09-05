@@ -9,7 +9,14 @@ public class SpyClothes {
 
 	public static void main(String[] args) {
 		HashMap<String,Integer > hm = new HashMap<>();
-		String[][] clothes = {{"yellowhat", "headgear"}, {"bluesunglasses", "eyewear"}, {"green_turban", "headgear"}};
+		
+		String[][] clothes = 
+			{
+				{"yellowhat", "headgear"}, 
+				{"bluesunglasses", "eyewear"},
+				{"green_turban", "headgear"}
+			};
+		
 		int answer = 1;
 		
 		for (int i = 0; i < clothes.length; i++) {
