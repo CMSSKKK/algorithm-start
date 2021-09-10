@@ -16,7 +16,7 @@ public class functionImprove {
 		 Queue<Integer> queue = new LinkedList<>();
 	     List<Integer> answerList = new ArrayList<>();
 
-	        for (int i = 0; i < speeds.length; i++) {
+	     for (int i = 0; i < speeds.length; i++) {
 	            double remain = (100 - progresses[i]) / (double) speeds[i];
 	            int date = (int) Math.ceil(remain);
 
