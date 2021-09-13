@@ -16,6 +16,7 @@ public class BOJ2004 {
 		
 		int twoResult = two(N)-two(N-M)-two(M);
 		int fiveResult = five(N)-five(N-M)-five(M);
+
 		System.out.println(Math.min(twoResult, fiveResult));
 	}
 	
