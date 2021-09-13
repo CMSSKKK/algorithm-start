@@ -21,7 +21,6 @@ public class BOJ10773 {
 				continue;
 			} else if(num == 0) {
 				stack.pop();
-				
 			} else {
 				stack.add(num);	
 			}			
