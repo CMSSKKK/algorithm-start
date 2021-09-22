@@ -42,8 +42,9 @@ public class BOJ2447 {
 		
 		int dividedSize = size / 3;
 		int count= 0;
-		for (int i = row; i < row+size; i +=dividedSize ) {
-			for (int j = col; j < col+size; j+=dividedSize) {
+		
+		for (int i = row; i < row+size; i += dividedSize) {
+			for (int j = col; j < col+size; j += dividedSize) {
 				count++;
 				if(count == 5) {
 					star(i,j,dividedSize,true);
