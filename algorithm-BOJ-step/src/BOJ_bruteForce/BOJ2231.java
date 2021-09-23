@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 public class BOJ2231 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
-		// TODO Auto-generated method stub
+		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String num = br.readLine();
 		

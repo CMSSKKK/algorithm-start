@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 public class BOJ7568 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
-		// TODO Auto-generated method stub
+		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine());
 		int[][] headCount = new int[N][2];
