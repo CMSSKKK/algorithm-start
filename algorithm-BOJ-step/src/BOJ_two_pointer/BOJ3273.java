@@ -23,7 +23,6 @@ public class BOJ3273 {
 		
 		System.out.println(pairCount(arr, N, val)); 
 		
-		// 1 2 3 5 7 9 10 11 12
 	}
 	
 	static int pairCount(int[] arr, int length, long val ) {
@@ -37,6 +36,7 @@ public class BOJ3273 {
 			if(arr[p1] + arr[p2] == val) {
 				count++;
 				p1++;
+				p2--;
 			} else if ( temp > val ) {
 				p2--;
 			} else {
