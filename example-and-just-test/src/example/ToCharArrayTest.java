@@ -1,4 +1,4 @@
-package programmers;
+package example;
 
 public class ToCharArrayTest {
 
