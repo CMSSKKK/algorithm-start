@@ -1,5 +1,8 @@
-package programmers;
+# [프로그래머스\] 소수 찾기 (완전탐색 Level 2)
 
+
+
+```java
 import java.util.HashSet;
 import java.util.Set;
 
@@ -72,3 +75,6 @@ public class findPrimeNumber {
 		return true; 
 	}
 }
+
+```
+
