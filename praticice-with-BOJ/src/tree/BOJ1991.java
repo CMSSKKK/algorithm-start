@@ -3,7 +3,6 @@ package tree;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 public class BOJ1991 {
 	
@@ -17,9 +16,10 @@ public class BOJ1991 {
 			String input = br.readLine();
 			char[] data = input.replaceAll(" ", "").toCharArray(); 
 			
-			tree[data[0]-'A'][0] =data[1]-'A';
-			tree[data[0]-'A'][1] =data[2]-'A';
+			tree[data[0]-'A'][0] = data[1]-'A';
+			tree[data[0]-'A'][1] = data[2]-'A';
 		}
+		
 		preOrder(0);
 		System.out.println();
 		inOrder(0);
