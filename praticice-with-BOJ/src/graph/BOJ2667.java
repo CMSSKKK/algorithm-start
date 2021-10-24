@@ -1,6 +1,8 @@
 package graph;
 
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class BOJ2667 {
@@ -63,4 +65,34 @@ public class BOJ2667 {
             }
         }
     }
+    
+    private static void bfs(int x, int y) {
+        //2차원 LinkedList를 가진 큐 선언
+        Queue<int[]> que = new LinkedList<>();
+        que.add(new int[]{x,y});
+        visited[x][y] = true;
+        aparts[apartNum]++;
+
+        while(!que.isEmpty()){
+
+            //x, y 값을 받아오기 위한 방법
+            int curX = que.peek()[0];
+            int curY = que.peek()[1];
+            que.poll();
+
+            for(int i=0; i<4; i++){
+                int nx = curX + dx[i];
+                int ny = curY + dy[i];
+
+                if(nx >= 0 && ny >= 0 && nx < n && ny < n){
+                    if(map[nx][ny] == 1 && !visited[nx][ny]){
+                        que.add(new int[]{nx,ny});
+                        visited[nx][ny] = true;
+                        aparts[apartNum]++;
+                    }
+                }
+            }
+        }
+    }
 }
+// https://n1tjrgns.tistory.com/245
