@@ -55,6 +55,7 @@ public class BOJ21608 {
 	
 	static void chooseSeat(int key, int[] farr) {
 		int[][] nearf = new int[N][N];
+		// 자리를 지정한 친구가 있는지 확인 
 		for (int friend : farr) {
 			if(map.containsKey(friend)) {
 				Student student = map.get(friend);
