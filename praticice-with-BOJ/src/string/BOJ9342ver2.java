@@ -7,7 +7,6 @@ import java.io.InputStreamReader;
 public class BOJ9342ver2 {
 	
 	public static void main(String[] args) throws IOException {
-		String pattern = "^[A-F]?A+F+C+[A-F]?$";
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		int t = Integer.parseInt(br.readLine());
