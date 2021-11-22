@@ -24,6 +24,7 @@ public class BOJ20437 {
 		
 		System.out.println(sb);
 	}
+	
 	static void check(String input, int n) {
 		int len = input.length();
 		int[] alpha = new int[26];
@@ -31,8 +32,10 @@ public class BOJ20437 {
 		for (int i = 0; i < len; i++) {
 			alpha[input.charAt(i)-'a']++;
 		}
+		
 		int min = Integer.MAX_VALUE;
 		int max = Integer.MIN_VALUE;
+		
 		for (int i = 0; i < len; i++) {
 			int cur = input.charAt(i);
 			if(alpha[cur-'a'] < n) {
@@ -52,6 +55,7 @@ public class BOJ20437 {
 				}
 			}
 		}
+		
 		if(min != Integer.MAX_VALUE) {
 			sb.append(min).append(" ").append(max);
 		} else {
